@@ -40,8 +40,8 @@ public class EllaDeGuzman extends Student implements SpecialInterestOrHobby, Stu
     public EllaDeGuzman() {
         firstName="Ella";
         lastName="DeGuzman";
-        myRow=1;
-        mySeat=2;
+        //myRow=1;
+        //mySeat=2;
         // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
         portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
