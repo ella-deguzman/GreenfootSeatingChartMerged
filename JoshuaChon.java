@@ -25,11 +25,12 @@ public class JoshuaChon extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public JoshuaChon(String f, String l, int r, int s) {
+    public JoshuaChon(String f, String l, int r, int s, int p) {
         firstName=f;
         lastName=l;
         myRow=r;
         mySeat=s;
+        period = p;
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
@@ -46,6 +47,7 @@ public class JoshuaChon extends Student implements SpecialInterestOrHobby
        lastName="Chon";
        myRow=1;
        mySeat=1;
+       period = 3;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";

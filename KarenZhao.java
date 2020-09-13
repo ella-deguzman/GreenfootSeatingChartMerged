@@ -24,11 +24,12 @@ public class KarenZhao extends Student implements NumberOfSiblings, SpecialInter
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public KarenZhao(String f, String l, int r, int s) {
+    public KarenZhao(String f, String l, int r, int s, int p) {
         firstName=f;
         lastName=l;
         myRow=r;
         mySeat=s;
+        period = p;
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing1.jpg";
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing2.jpg";
@@ -46,6 +47,7 @@ public class KarenZhao extends Student implements NumberOfSiblings, SpecialInter
         lastName="Zhao";
         myRow=3;
         mySeat=3;
+        period = 2;
         // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
         portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing1.jpg";

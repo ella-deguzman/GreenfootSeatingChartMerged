@@ -22,32 +22,34 @@ public class NibodhVallapureddy extends Student implements SpecialInterestOrHobb
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public NibodhVallapureddy(String f, String l, int r, int s) {
+    public NibodhVallapureddy(String f, String l, int r, int s, int p) {
         firstName="Nibodh";
         lastName="Vallapureddy";
-        myRow=1;
-        mySeat=1;
+        myRow=r;
+        mySeat=s;
+        period = p;
         portraitFile="nibodhvallapureddy.jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile="nibodhvallapureddy-standing.jpg";
         soundFile="nibodhvallapureddy.wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
     }
-    /**
+    /*
      * Default constructor, if you don't pass in a name and seating location
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
-     
+     */
     public NibodhVallapureddy() {
         firstName="Nibodh";
         lastName="Vallapureddy";
         myRow=1;
         mySeat=1;
+        period = 2;
        portraitFile="nibodhvallapureddy.jpg";
        standingFile="nibodhvallapureddy-standing.jpg";
        soundFile="nibodhvallapureddy.wav";
        setImage(portraitFile);
     }
-    */
+    
      /**
      * Act - do whatever the NibodhVallapureddy actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

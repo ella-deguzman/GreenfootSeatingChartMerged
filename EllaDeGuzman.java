@@ -21,11 +21,12 @@ public class EllaDeGuzman extends Student implements SpecialInterestOrHobby, Stu
      * 
      */
   
-   public EllaDeGuzman(String f, String l, int r, int s) {
+   public EllaDeGuzman(String f, String l, int r, int s, int p) {
         firstName=f;
         lastName=l;
         myRow=r;
         mySeat=s;
+        period = p;
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
@@ -42,6 +43,7 @@ public class EllaDeGuzman extends Student implements SpecialInterestOrHobby, Stu
         lastName="DeGuzman";
         //myRow=1;
         //mySeat=2;
+        period = 3;
         // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
         portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
@@ -56,6 +58,7 @@ public class EllaDeGuzman extends Student implements SpecialInterestOrHobby, Stu
     public void act() 
     {
         // Add your action code here.
+ 
         if(Greenfoot.mouseClicked(this)){
             sitting=false; //chnges state of character to standing
             setImage(standingFile); //switches image to me standing
